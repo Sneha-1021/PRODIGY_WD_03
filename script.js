@@ -1,5 +1,5 @@
 let rows = document.querySelectorAll(".row");
-let resetButton = document.querySelector("#reset-button");
+let resetBtn = document.querySelector("#reset-button");
 let newGameBtn = document.querySelector("#new-button");
 let msgContainer = document.querySelector(".msg-container");
 let msg = document.querySelector("#msg");
@@ -22,7 +22,7 @@ const resetGame = () => {
   enablerows();
   msgContainer.classList.add("hide");
 };
-rows.forEach((row) => {
+boxes.forEach((box) => {
     row.addEventListener("click", () => {
     if (turnO) {
         row.innerText = "O";
@@ -77,4 +77,4 @@ const checkWinner = () => {
   }
 };
 newGameBtn.addEventListener("click", resetGame);
-resetButton.addEventListener("click", resetGame);
+resetBtn.addEventListener("click", resetGame);
