@@ -1,4 +1,4 @@
-let boxes = document.querySelectorAll(".box");
+let rows = document.querySelectorAll(".row");
 let resetBtn = document.querySelector("#reset-button");
 let newGameBtn = document.querySelector("#new-button");
 let msgContainer = document.querySelector(".msg-container");
@@ -22,7 +22,7 @@ const resetGame = () => {
   enablerows();
   msgContainer.classList.add("hide");
 };
-boxes.forEach((box) => {
+rows.forEach((box) => {
     row.addEventListener("click", () => {
     if (turnO) {
         row.innerText = "O";
