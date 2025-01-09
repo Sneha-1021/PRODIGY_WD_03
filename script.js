@@ -1,4 +1,4 @@
-let rows = document.querySelectorAll(".box");
+let boxes = document.querySelectorAll(".box");
 let resetBtn = document.querySelector("#reset-button");
 let newGameBtn = document.querySelector("#new-button");
 let msgContainer = document.querySelector(".msg-container");
