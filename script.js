@@ -22,7 +22,7 @@ const resetGame = () => {
   enablerows();
   msgContainer.classList.add("hide");
 };
-rows.forEach((box) => {
+rows.forEach((row) => {
     row.addEventListener("click", () => {
     if (turnO) {
         row.innerText = "O";
